@@ -5,7 +5,7 @@ const searchFood = document.getElementById('searcher');
 const gallery = document.getElementById('gallery');
 
 //Función que pinta la data en el documento
-const printRestaurants = (name, adress, description, image) => {
+const printRestaurants = (name, adress, description, number, image) => {
   gallery.innerHTML += `
   <div class="gallery-product col-lg-4 col-md-4 col-sm-4 col-xs-6">
     <img class="img-responsive" src="${image}" alt="img"></img>
@@ -22,6 +22,8 @@ const printRestaurants = (name, adress, description, image) => {
                 </div>
                 <div class="modal-body">
                     <p>${description}</p>
+                    <p>Dirección: ${adress}</p>
+                    <p>Teléfono: ${number}</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="document.getElementById('${name}').style.display='none'">Close</button>
@@ -32,7 +34,6 @@ const printRestaurants = (name, adress, description, image) => {
 </div>`
 };
 
-
 //Petición AJAX, usando el método GET para traer la data JSON.
 let arrRestaurants = [];
 
@@ -42,7 +43,7 @@ fetch('../data/restaurants.json')
     arrRestaurants = data;
     /* console.log(arrRestaurants); */
     arrRestaurants.map(r => {
-      printRestaurants(r.name, r.adress, r.description, r.image);
+      printRestaurants(r.name, r.adress, r.description, r.number, r.image);
     });
   })
   .catch(error => console.log(error));

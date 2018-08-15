@@ -12,7 +12,7 @@ window.filterRestaurants = (arrRestaurants, search) => {
     gallery.innerHTML = '';
     arrRestaurants.filter(objRestaurant => {
         if (objRestaurant.name.toUpperCase().includes(search.toUpperCase())) {
-            printRestaurants(objRestaurant.name, objRestaurant.adress, objRestaurant.description, objRestaurant.image)
+            printRestaurants(objRestaurant.name, objRestaurant.adress, objRestaurant.number, objRestaurant.description, objRestaurant.image)
         }
     });
 };
