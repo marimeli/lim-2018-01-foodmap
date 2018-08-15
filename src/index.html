@@ -4,90 +4,77 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Foodmap</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 </head>
 
 <body>
     <!--   Screen Splash -->
-   <!--  <section>
+    <!--    <section id="preview" class="screen">
         <img src="icon.png" alt="logo" height="150">
     </section> -->
     <!--   Home App-->
-        <section>
-            <div class="container">
-                <div class="row">
-                    <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <h1 class="gallery-title">Foodmap</h1>
-                    </div>
-
-                    <div align="center">
-                        <button class="btn btn-default filter-button" data-filter="all">Todos</button>
-                        <button class="btn btn-default filter-button" data-filter="hdpe">Pizzería</button>
-                        <button class="btn btn-default filter-button" data-filter="sprinkle">Fast Food</button>
-                        <button class="btn btn-default filter-button" data-filter="spray">Cevichería</button>
-                        <button class="btn btn-default filter-button" data-filter="irrigation">Anticuchería</button>
-                    </div>
-                    <br/>
-
-
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                        <img src="http://fakeimg.pl/365x365/" class="img-responsive">
-                    </div>
-                </div>
+    <section id="home">
+        <nav class="topnav">
+            <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <h1 class="gallery-title">Foodmap</h1>
             </div>
-        </section>
+            <div class="search-container">
+                <form>
+                    <input id="searcher" class="searcher" type="text" placeholder="Buscar un restaurante.." name="search" required>
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </nav>
+        <main class="container">
+            <div id="cards" class="row">
+                <div id="myBtnContainer" class="filter-buttons">
+                    <button class="btn btn-default filter-button" data-filter="all">Todos</button>
+                    <button class="btn btn-default filter-button" data-filter="hdpe">Pizzería</button>
+                    <button class="btn btn-default filter-button" data-filter="sprinkle">Fast Food</button>
+                    <button class="btn btn-default filter-button" data-filter="spray">Cevichería</button>
+                    <button class="btn btn-default filter-button" data-filter="irrigation">Anticuchería</button>
+                </div>
+                <br/>
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
+                <img src="http://fakeimg.pl/365x365/" class="img-responsive">
+            </div>
+        </main>
+    </section>
     </section>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/app.js"></script>
     <script src="js/main.js"></script>
 
 </body>

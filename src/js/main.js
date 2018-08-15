@@ -1,28 +1,31 @@
-/* alert('Hola'); */
+/* Declaración de variables */
+const preview = document.getElementById('preview');
+const home = document.getElementById('home');
+const searchFood = document.getElementById('searcher');
+const cards = document.getElementById('cards');
 
-$(document).ready(function(){
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('1000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
-        }
+//Petición AJAX, usando el método GET para traer la data JSON.
+    fetch('../data/restaurants.json')
+    .then(res => res.json())
+    .then(data => {
+        const arrRestaurants = data;
+        console.log(arrRestaurants);
+
+    let objRestaurant = Object.keys(arrRestaurants);
+    console.log(objRestaurant); //index de objetos del array
+
+  for (objRestaurant in arrRestaurants) {
+      if (arrRestaurants.hasOwnProperty(objRestaurant)) {
+          const x = arrRestaurants[objRestaurant];
+          console.log(x.name); //objeto restaurant. name (propiedad)
+      }
+  }
     });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
 
+/*  Función filter */
+searchFood.addEventListener('keyup', () => {
+    const searchValue = searchFood.value;
+    filterRestaurants(arrRestaurants, searchValue);
 });
+

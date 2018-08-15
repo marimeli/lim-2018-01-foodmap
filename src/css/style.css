@@ -1,9 +1,85 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.8;
+  color: #f5f6f7;
+}
+
+/* Screen splash */
+.screen {
+/*   background-color: #FE5252; */
+  background-color: #FDD238;
+	justify-content: center;
+}
+
+/* Navbar */
+.topnav {
+  overflow: hidden;
+  background-color: #FF7174;
+  font-family: 'Montserrat';
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.searcher {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  width: 300px;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #FDD238;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #FDE487; 
+}
+
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+  .topnav a, .topnav input[type=text], .topnav .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #FDD238;
+  }
+}
+
+/* Main */
+
+.filter-buttons {
+  text-align: center;
+  padding: 6px 10px;
+}
+
 .gallery-title {
-    font-size: 36px;
-    color: #42B32F;
-    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    text-align: center; 
+    margin-top: 30px;
     font-weight: 500;
-    margin-bottom: 70px;
 }
 
 .gallery-title:after {
@@ -12,8 +88,9 @@
     width: 7.5%;
     left: 46.5%;
     height: 45px;
-    border-bottom: 1px solid #5e5e5e;
 }
+
+
 .filter-button {
     font-size: 18px;
     border: 1px solid #42B32F;
@@ -21,6 +98,7 @@
     text-align: center;
     color: #42B32F;
     margin-bottom: 30px;
+    font-family: 'Montserrat';
 }
 
 .filter-button:hover {
@@ -30,6 +108,7 @@
     text-align: center;
     color: #ffffff;
     background-color: #42B32F;
+  
 
 }
 .btn-default:active .filter-button:active {
