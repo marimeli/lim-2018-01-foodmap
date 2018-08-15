@@ -11,10 +11,14 @@ body {
 
 /* Screen splash */
 .screen {
-/*   background-color: #FE5252; */
-  background-color: #FDD238;
-	justify-content: center;
+  background-color:  #FF7174;
+  text-align: center;
+  height: 100vh;
+  width:100%;
+  line-height:100vh;
+  margin:0px auto;
 }
+
 
 /* Navbar */
 .topnav {
@@ -120,6 +124,40 @@ body {
     width: 100%;
 }
 
-.gallery_product {
+.gallery-product {
     margin-bottom: 30px;
+}
+
+/* Modal */
+/* .modal {
+  position: absolute;
+  height: 100%;
+
+} */
+
+.modal button {
+  float: right;
+  position: relative;
+  top: 40%;
+}
+
+.btn-modal {
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  margin-bottom: 30px;
+  font-family: 'Montserrat';
+  background-color: #FDD238;
+}
+
+
+
+.btn-modal:hover {
+  font-size: 15px;
+  border: 1px solid #FF7174;
+  text-align: center;
+  color: #ffffff;
+  background-color: #FF7174;
 }

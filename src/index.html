@@ -10,17 +10,16 @@
     <link rel="icon" type="image.png" href="icon.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <!-- <link href="https://fonts.googleapis.com/css?family=Karma" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
 </head>
 
 <body>
     <!--   Screen Splash -->
-    <!--    <section id="preview" class="screen">
+       <div id="preview" class="screen">
         <img src="icon.png" alt="logo" height="150">
-    </section> -->
+       </div>
     <!--   Home App-->
     <section id="home">
         <nav class="topnav">
@@ -36,45 +35,51 @@
                 </form>
             </div>
         </nav>
-        <main class="container" id="cards">
-            <div id="cards" class="row">
-                <div id="myBtnContainer" class="filter-buttons">
-                    <button class="btn filter-button" data-filter="all">Todos</button>
-                    <button class="btn filter-button" data-filter="hdpe">Pizzería</button>
-                    <button class="btn filter-button" data-filter="sprinkle">Fast Food</button>
-                    <button class="btn filter-button" data-filter="spray">Cevichería</button>
-                    <button class="btn filter-button" data-filter="irrigation">Anticuchería</button>
-                </div>
-                <br/>
+        <div id="cards" class="row">
+            <div id="myBtnContainer" class="filter-buttons">
+                <button class="btn filter-button" data-filter="all">Todos</button>
+                <button class="btn filter-button" data-filter="hdpe">Pizzería</button>
+                <button class="btn filter-button" data-filter="sprinkle">Fast Food</button>
+                <button class="btn filter-button" data-filter="spray">Cevichería</button>
+                <button class="btn filter-button" data-filter="irrigation">Anticuchería</button>
             </div>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+            <br/>
+         <div class="container" id="gallery">
+            <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                        <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+                    </div>
+        
+                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
+                            <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+                        </div> -->
+
+            <!--   <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
+                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
             </div>
 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                    <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-            </div>
-
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                    <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                    <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
             </div>
 
             <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                    <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-            </div>
-        </main>
+                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+            </div> -->
+        </div>
+        </div>
     </section>
     </section>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
+    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/main.js"></script>
 
