@@ -11,7 +11,7 @@ La mesa perfecta está a solo un clic.
 ¿Qué esperas para probarla?
 
 ![screen](https://user-images.githubusercontent.com/39389947/44143862-f3046b22-a04a-11e8-8a95-1b4b63149cae.jpg)
-![demo](https://user-images.githubusercontent.com/39389947/44143844-ddf118fc-a04a-11e8-8859-82bb3574ba82.jpg)
+![demo](https://user-images.githubusercontent.com/39389947/44144060-b4d6950e-a04b-11e8-8937-5022b824b52d.jpg)
 
 
 [**Versión de prueba AQUÍ**](https://marimeli.github.io/lim-2018-01-foodmap/src/)
