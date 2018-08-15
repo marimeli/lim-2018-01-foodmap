@@ -1,4 +1,4 @@
-$(document).ready(function() {
+/* $(document).ready(function() {
     $(".filter-button").click(function(){
         var value = $(this).attr('data-filter');
         
@@ -22,16 +22,4 @@ $(this).removeClass("active");
 }
 $(this).addClass("active");
 });
-
-
-window.filterRestaurants = (restaurants, search) => {
-    console.log('Entré a filterFood');
-    console.log(restaurants); //toda la data
-    console.log(search); //lo que escribe el usuario
-
-/*     let filteredRestaurants = restaurants.filter(restaurant => 
-        restaurant.name.toUpperCase().indexOf(search.toUpperCase()) > -1);
-    return filteredRestaurants;
-    console.log(filteredRestaurants); */
-};
-
+ */
