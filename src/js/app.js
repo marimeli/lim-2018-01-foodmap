@@ -11,24 +11,21 @@ window.filterRestaurants = (arrRestaurants, search) => {
     console.log(search); //lo que escribe el usuario
     gallery.innerHTML = '';
     arrRestaurants.filter(objRestaurant => {
-      if (objRestaurant.name.toUpperCase().includes(search.toUpperCase())) {
-        printRestaurants(objRestaurant.name, objRestaurant.adress, objRestaurant.description, objRestaurant.image)
-      }
+        if (objRestaurant.name.toUpperCase().includes(search.toUpperCase())) {
+            printRestaurants(objRestaurant.name, objRestaurant.adress, objRestaurant.description, objRestaurant.image)
+        }
     });
-  };
+};
 
+/* Función filter by type of food  */
 
-/*  Función filter by type of food */
 /* $(document).ready(function () {
     $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
-        if (value === "all") {
-            //$('.filter').removeClass('hidden');
+        if (value == "all") {
             $('.filter').show('1000');
         }
         else {
-            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
             $(".filter").not('.' + value).hide('3000');
             $('.filter').filter('.' + value).show('3000');
 
@@ -45,4 +42,4 @@ window.filterRestaurants = (arrRestaurants, search) => {
 
 
 
-    
+

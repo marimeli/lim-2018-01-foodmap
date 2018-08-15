@@ -7,7 +7,7 @@
         "phone number": 2470193,
         "distance": "750",
         "image": "../data/image/1.jpg",
-        "description": 7
+        "description": "La Linterna es un restaurante con mucha tradición y recuerdos entrañables donde encontrarás las mejores Pizzas y Pastas de Lima."
     },
     {
         "name": "Arepa Cafe",
@@ -17,7 +17,7 @@
         "phone number": 4771296,
         "distance": 70,
         "image": "../data/image/2.png",
-        "description": 7
+        "description": "Es la primera franquicia de comida venezolana en Lima, con una variedad de deliciosas Arepas y platos típicos."
     },
     {
         "name": "Restaurante La Vista",
@@ -27,67 +27,67 @@
         "phone number": 2177009,
         "distance": 2008,
         "image": "../data/image/3.jpg",
-        "description": 7
+        "description": "Descubra la deliciosa comida peruana y disfrute de las extraordinarias vistas al océano Pacífico en una de las mejores opciones gastronómicas de Lima."
     },
     {
         "name": "Familia Restaurante",
-        "type": "restaurante",
+        "type": "restaurante saludable",
         "start": 4,
         "adress": "Av. Almte. Miguel Grau 614, Barranco 614",
-        "phone number": "2529450",
-        "distance": "2018-04-30",
+        "phone number": 2529450,
+        "distance": 10,
         "image": "../data/image/4.jpg",
-        "description": 7
+        "description": "Encuentra aquí comida saludable, desayunos,sandwichs y algunos platos de nuestra cocina con recetas de casa."
     },
     {
         "name": "Veggie Pizza",
         "type": "pizzeria",
         "start": 4,
-        "adress": "",
-        "phone number": "",
+        "adress": "Jirón Colina 112, Barranco",
+        "phone number": 2475963,
         "distance": "2018-04-30",
         "image": "../data/image/5.jpg",
-        "description": 7
+        "description": "Pizzas vegetarianas, saludables y deliciosas, hechas a mano con mucho amor. También encontrarás postres y bebidas"
     },
     {
         "name": "Canta Ranita",
-        "type": "pizzeria",
+        "type": "restaurante de mariscos",
         "start": 4,
         "adress": "",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/6.jpg",
-        "description": 7
+        "description": "Cuna del ceviche apaltado, el guardia imperial y las conchitas sopleteadas. Santuario de fútbol con la mejor vibra y el mejor ambiente."
     },
     {
         "name": "Chifa Chung Yion",
-        "type": "pizzeria",
+        "type": "restaurante chino",
         "start": 4,
         "adress": "",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/7.jpg",
-        "description": 7
+        "description": "Un contundente Tallarín San Sei especial, un delicioso Funkinkay y un rico Kamlu Wantan, son las especialidades de la casa. Lo mejor de la comida cantonesa."
     },
     {
         "name": "El Tio Mario",
-        "type": "pizzeria",
+        "type": "anticucheria",
         "start": 4,
-        "adress": "",
+        "adress": "Av. San Martín 099 ",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/8.jpg",
-        "description": 7
+        "description": "Brinda una experiencia especial, un grato ambiente, una vista impresionante, comida tradicional peruana de primera y buena atención. Sirve almuerzo y cena. Ideal para grupos."
     },
     {
-        "name": "Restaurant marino",
-        "type": "pizzeria",
+        "name": "Joselito Bartolo",
+        "type": "restaurante marino",
         "start": 4,
-        "adress": "",
-        "phone number": "",
+        "adress": "Av. Grau 941, Barranco",
+        "phone number":  4143926,
         "distance": "2018-04-30",
         "image": "../data/image/9.jpg",
-        "description": 7
+        "description": "Joselito Bartolo, es un restaurante de pescados y mariscos fusión. Sirve almuerzo, cena y bebidas"
     },
     {
         "name": "Pizzeria La Boca",
@@ -97,7 +97,7 @@
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/10.jpg",
-        "description": 7
+        "description": "En la Pizzeria Trattoria 'La Boca' encontraras las mejores pastas, un ambiente confortable, calido y familiar , comida selecta y muy buena atencion."
     },
     {
         "name": "Telepizza",
@@ -107,46 +107,46 @@
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/11.jpg",
-        "description": 7
+        "description": "Las mejores pizzas del Perú"
     },
     {
         "name": "Asuu Pepitos",
-        "type": "pizzeria",
+        "type": "fast food",
         "start": 4,
-        "adress": "",
+        "adress": "Nicolás de Pierola 132 Barranco ",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/12.jpg",
-        "description": 7
+        "description": "Los mejores pepitos están aquí. Sus hamburguesas Bombas, el pepito de carne y chorizo son los mejores"
     },
     {
         "name": "Chifa Vietnam",
-        "type": "pizzeria",
+        "type": "restaurante chino",
         "start": 4,
         "adress": "",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/13.jpg",
-        "description": 7
+        "description": "Los mejores platos orientales y comida vietnamita."
     },
     {
         "name": "Anticuchería Juancito",
-        "type": "pizzeria",
+        "type": "anticucheria",
         "start": 4,
         "adress": "",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/14.png",
-        "description": 7
+        "description": "Criolla, comida rápida y restaurantes de carnes."
     },
     {
         "name": "Sanguchon Campesino",
-        "type": "pizzeria",
+        "type": "fast food",
         "start": 4,
         "adress": "",
         "phone number": "",
         "distance": "2018-04-30",
         "image": "../data/image/15.jpg",
-        "description": 7
+        "description": "Cuenta con más de 350 combinaciones de sándwiches, y elabora muchos de los insumos que utiliza, como las salsas, hamburguesas, tortillas, entre otros."
     }
 ]
