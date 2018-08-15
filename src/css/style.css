@@ -93,26 +93,26 @@ body {
 
 .filter-button {
     font-size: 18px;
-    border: 1px solid #42B32F;
+    border: 1px solid #FF7174;
     border-radius: 5px;
     text-align: center;
-    color: #42B32F;
+    color: black;
     margin-bottom: 30px;
     font-family: 'Montserrat';
+    background-color: #FDD238;
 }
 
 .filter-button:hover {
     font-size: 18px;
-    border: 1px solid #42B32F;
+    border: 1px solid #FF7174;
     border-radius: 5px;
     text-align: center;
     color: #ffffff;
-    background-color: #42B32F;
-  
-
+    background-color: #FF7174;
 }
-.btn-default:active .filter-button:active {
-    background-color: #42B32F;
+
+.filter-button:active {
+    background-color: #FF7174;
     color: white;
 }
 
