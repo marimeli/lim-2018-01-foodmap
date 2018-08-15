@@ -10,7 +10,7 @@ const printRestaurants = (name, image) => {
     <div class="gallery-product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
         <img src="../data/image/13.jpg "class="img-responsive" alt="img" width="365" height="365">
         <span>${name}</span>
-        <button type="button" class="btn-modal" data-toggle="modal" data-target="#miModal">Ver más</button>
+        <button type="butxton" class="btn-modal" data-toggle="modal" data-target="#miModal">Ver más</button>
     </div>
     
     <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
