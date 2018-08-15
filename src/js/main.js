@@ -6,21 +6,21 @@ const cards = document.getElementById('cards');
 
 
 //Petición AJAX, usando el método GET para traer la data JSON.
-    fetch('../data/restaurants.json')
+fetch('../data/restaurants.json')
     .then(res => res.json())
     .then(data => {
         const arrRestaurants = data;
         console.log(arrRestaurants);
 
-    let objRestaurant = Object.keys(arrRestaurants);
-    console.log(objRestaurant); //index de objetos del array
+        let indexRestaurant = Object.keys(arrRestaurants);
+        console.log(indexRestaurant); //index de objetos del array
 
-  for (objRestaurant in arrRestaurants) {
-      if (arrRestaurants.hasOwnProperty(objRestaurant)) {
-          const x = arrRestaurants[objRestaurant];
-          console.log(x.name); //objeto restaurant. name (propiedad)
-      }
-  }
+        for (indexRestaurant in arrRestaurants) {
+            if (arrRestaurants.hasOwnProperty(indexRestaurant)) {
+                const objRestaurant = arrRestaurants[indexRestaurant];
+                console.log(objRestaurant.name); //objeto restaurant. name (propiedad)
+            }
+        }
     });
 
 /*  Función filter */
