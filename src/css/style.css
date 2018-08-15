@@ -6,7 +6,6 @@ body {
   margin: 0;
   font-family: 'Montserrat', sans-serif;
   line-height: 1.8;
-  color: #f5f6f7;
 }
 
 /* Screen splash */
@@ -18,7 +17,6 @@ body {
   line-height:100vh;
   margin:0px auto;
 }
-
 
 /* Navbar */
 .topnav {
@@ -124,14 +122,17 @@ body {
     width: 100%;
 }
 
-.gallery-product {
-  width:365px;
-  height:365px;
-  padding: 15px;
+.gallery-product span {
+  font-size: 18px;
+  display: inline-block;
+  vertical-align: middle;
 }
 
 .gallery-product img {
-  margin-bottom: 30px;
+/*   margin-bottom: 30px; */
+  width:365px;
+  height:365px;
+  padding: 5px;
 }
 
 /* Modal */
@@ -157,8 +158,6 @@ body {
   background-color: #FDD238;
 }
 
-
-
 .btn-modal:hover {
   font-size: 15px;
   border: 1px solid #FF7174;
@@ -167,7 +166,3 @@ body {
   background-color: #FF7174;
 }
 
-.img-responsive {
-  width:365px;
-  height:365px;
-}

@@ -9,30 +9,33 @@ const gallery = document.getElementById('gallery');
 const printRestaurants = (name, adress, description, image) => {
   gallery.innerHTML += `
  
-    <div class="gallery-product col-lg-4 col-md-4 col-sm-4 col-xs-6">
-      <img class="img-responsive" src="${image}" alt="img">
-      <span>${name}</span>
-      <button type="button" class="btn-modal" data-toggle="modal" data-target="#miModal">Ver más</button>
-    </div>
-    </div>
-
-    <div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-      <div class="modal-dialog" role="document">
+  <div class="gallery-product col-lg-4 col-md-4 col-sm-4 col-xs-6">
+    <img class="img-responsive" src="${image}" alt="img">
+    <span>${name}</span>
+    <button type="button" class="btn-modal" data-toggle="modal" data-target="#miModal">Ver más</button>
+  </div>
+<!-- The Modal -->
+<div class="modal fade" id="miModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
-              <h4 class="modal-title" id="myModalLabel">${name}</h4>
-          </div>
-          <div class="modal-body">
-            <p>${description}</p>
-          </div>
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                <span>${name}</span>
+             </div>
+             <!-- Modal body -->
+            <div class="modal-body">
+                <p>${description}</p>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
         </div>
-      </div>
-   
-  
-  `;
+    </div> 
+</div> `
 };
 
 
