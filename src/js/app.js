@@ -1,47 +1,48 @@
-//Función screen splash
+/* Función screen splash */
 window.setTimeout(() => {
     preview.remove()
     home.style.display = 'block'
-  }, 2000);
+}, 2000);
 
-/*  Función filter */
-window.filterRestaurants = (restaurants, search) => {
-    console.log('Entré a filterFood');
-    console.log(restaurants); //toda la data
+/*  Función filter by input search*/
+window.filterRestaurants = (arrRestaurants, search) => {
+    console.log('Entré a filterRestaurants');
+    console.log(arrRestaurants); //array de restaurants
     console.log(search); //lo que escribe el usuario
+    gallery.innerHTML = '';
+    arrRestaurants.filter(objRestaurant => {
+      if (objRestaurant.name.toUpperCase().includes(search.toUpperCase())) {
+        printRestaurants(objRestaurant.name, objRestaurant.adress, objRestaurant.description, objRestaurant.image)
+      }
+    });
+  };
 
-    let indexRestaurant = Object.keys(restaurants);
-        console.log(indexRestaurant); //index de objetos del array
-
-        for (indexRestaurant in restaurants) {
-            if (restaurants.hasOwnProperty(indexRestaurant)) {
-                const objRestaurant = restaurants[indexRestaurant];
-                console.log(objRestaurant); //el objeto con todas sus propiedades
-            }
-        }
-};
 
 /*  Función filter by type of food */
-$(document).ready(function() {
-    $(".filter-button").click(function(){
+/* $(document).ready(function () {
+    $(".filter-button").click(function () {
         var value = $(this).attr('data-filter');
-        
-        if(value === "all") {
+        if (value === "all") {
             //$('.filter').removeClass('hidden');
             $('.filter').show('1000');
         }
         else {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
+            //            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+            //            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.' + value).hide('3000');
+            $('.filter').filter('.' + value).show('3000');
+
         }
     });
-    
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
-});
 
+    if ($(".filter-button").removeClass("active")) {
+        $(this).removeClass("active");
+    }
+    $(this).addClass("active");
+});
+ */
+
+
+
+
+    

@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Foodmap</title>
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
     <link rel="icon" type="image.png" href="icon.png">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -17,17 +17,17 @@
 
 <body>
     <!--   Screen Splash -->
-       <div id="preview" class="screen">
+    <div id="preview" class="screen">
         <img src="icon.png" alt="logo" height="150">
-       </div>
+    </div>
     <!--   Home App-->
-    <section id="home">
+    <div id="home">
         <nav class="topnav">
             <div class="gallery col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <h1 class="gallery-title">Foodmap</h1>
             </div>
             <div class="search-container">
-                <form>
+                <form id="search-box">
                     <input id="searcher" class="searcher" type="text" placeholder="Buscar un restaurante.." name="search" required>
                     <button type="submit">
                         <i class="fa fa-search"></i>
@@ -35,7 +35,8 @@
                 </form>
             </div>
         </nav>
-        <div id="cards" class="row">
+        <div class="row">
+            <!-- Filter By Buttons-->
             <div id="myBtnContainer" class="filter-buttons">
                 <button class="btn filter-button" data-filter="all">Todos</button>
                 <button class="btn filter-button" data-filter="hdpe">Pizzería</button>
@@ -44,40 +45,11 @@
                 <button class="btn filter-button" data-filter="irrigation">Anticuchería</button>
             </div>
             <br/>
-         <div class="container" id="gallery">
-            <!-- <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                        <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-                    </div>
-        
-                    <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                            <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-                        </div> -->
-
-            <!--   <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter sprinkle">
-                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
+            <!-- Galllery-->
+            <div class="container" id="gallery">
             </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter hdpe">
-                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter spray">
-                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-xs-6 filter irrigation">
-                <img src="https://cdn2.royalcanin.es/wp-content/uploads/2016/03/4.jpg" class="img-responsive" alt="img" width="365" height="365">
-            </div> -->
         </div>
-        </div>
-    </section>
-    </section>
-    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script> -->
-    <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+    </div>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/app.js"></script>

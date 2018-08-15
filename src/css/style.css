@@ -125,14 +125,19 @@ body {
 }
 
 .gallery-product {
-    margin-bottom: 30px;
+  width:365px;
+  height:365px;
+  padding: 15px;
+}
+
+.gallery-product img {
+  margin-bottom: 30px;
 }
 
 /* Modal */
 /* .modal {
   position: absolute;
   height: 100%;
-
 } */
 
 .modal button {
@@ -160,4 +165,9 @@ body {
   text-align: center;
   color: #ffffff;
   background-color: #FF7174;
+}
+
+.img-responsive {
+  width:365px;
+  height:365px;
 }
